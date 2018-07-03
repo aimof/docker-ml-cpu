@@ -1,0 +1,8 @@
+version: "3"
+services:
+  jupyter:
+    build: .
+    volumes:
+      - ./work:/home/work
+    environment:
+      - PASSWORD=passwd
